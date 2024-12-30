@@ -2,6 +2,7 @@
 
 **Next Pizza** is a clone of the popular pizza delivery service “Dodo Pizza,” developed using the Next.js framework.
 
+### [DEMO](https://next-pizza-taupe-one.vercel.app/)
 
 ## Features
 

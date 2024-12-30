@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
   try {
-    const code = req.nextUrl.searchParams.get('code');
-
+    const url = new URL(req.url);
+    const code = url.searchParams.get('code');
 
     if (!code) {
       return NextResponse.json({ error: 'Неверный код' }, { status: 400 });
@@ -39,5 +39,6 @@ export async function GET(req: NextRequest) {
   } catch (error) {
     console.error(error);
     console.log('[VERIFY_GET] Server error', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

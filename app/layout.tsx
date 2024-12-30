@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Toaster } from 'react-hot-toast';
 import React from "react";
 import localFont from 'next/font/local'
 import { Providers } from "@/shared/components/shared/providers";

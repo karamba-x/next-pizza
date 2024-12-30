@@ -30,7 +30,7 @@
     cd next-pizza
     npm install
     ```
-3.  Set up the environment variables:
+3.  Set up the environment variables
     
 4.  Run Prisma migrations:
     
